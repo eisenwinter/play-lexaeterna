@@ -1,0 +1,37 @@
+@charset "utf-8"
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@400;500;700&display=swap')
+
+$shadow: #7b7263ff
+$bittersweet: #ff6b6bff
+$floral-white: #fffdf7ff
+$purple-navy: #454372ff
+$st-patricks-blue: #2f2963ff
+
+$primary: $bittersweet
+$outer-background: $bittersweet
+$inner-background: $floral-white
+$family-sans-serif: 'Noto Sans', sans-serif
+$family-secondary: 'Noto Sans TC', sans-serif
+
+@import "sass/utilities/_all"
+@import "sass/base/_all"
+@import "sass/elements/_all"
+@import "sass/form/_all"
+@import "sass/components/_all"
+@import "sass/grid/_all"
+@import "sass/helpers/_all"
+@import "sass/layout/_all"
+
+
+body
+    background-color: $outer-background
+.content-area
+    background-color: $floral-white
+    padding: 2rem
+.section:first
+    padding-top: 0
+.columns-max-500-ma
+    max-width:  500px
+    margin: 0 auto
+.fixed
+    position: fixed

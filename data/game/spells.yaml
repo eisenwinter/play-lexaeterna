@@ -1,0 +1,241 @@
+spells:
+-
+    Name: Joint Beat
+    Element: Organic
+    Stamina: 1/1/1
+    Type: Active
+    Dmg: 35
+    CC: None
+    Special: 
+-
+    Name: Parrying
+    Element: Organic
+    Stamina: 1/1/1
+    Type: Active
+    Dmg: 0
+    CC: None
+    Special: 5/25/50 % chance to deflect 5/25/50 % dmg
+-
+    Name: Vulcan
+    Element: Fire
+    Stamina: 2/2/2
+    Type: Active
+    Dmg: 72
+    CC: None
+    Special: 
+-
+    Name: Stone Curse
+    Element: Earth
+    Stamina: 2/2/2
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: 
+-
+    Name: Firewall
+    Element: Fire
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: 
+-
+    Name: Heavens Drive
+    Element: Earth
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 70
+    CC: None
+    Special: 
+-
+    Name: Cancel
+    Element: Organic
+    Stamina: 3/3/3
+    Type: Passive
+    Dmg: 0
+    CC: None
+    Special: Has a 50/80/95% chance to block next attack
+-
+    Name: Snowblind
+    Element: Light
+    Stamina: 1/2/2
+    Type: Passive
+    Dmg: 0
+    CC: Blind
+    Special: Boosts the following attack if its of type light by 10/15/25%
+-
+    Name: Devour
+    Element: Darkness
+    Stamina: 1/2/2
+    Type: Active
+    Dmg: 35
+    CC: None
+    Special: Might steal 1/5/10% of enemies stats
+-
+    Name: Water Rift
+    Element: Water
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 40
+    CC: None
+    Special: 
+-
+    Name: Excess Growth
+    Element: Plant
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 40
+    CC: None
+    Special: 
+-
+    Name: Ember Stick
+    Element: Fire
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 60
+    CC: None
+    Special: 
+-
+    Name: Slumping
+    Element: Earth
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 80
+    CC: None
+    Special: 
+-
+    Name: High Wind
+    Element: Wind
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 50
+    CC: None
+    Special: 
+-
+    Name: Maul
+    Element: Organic
+    Stamina: 2/2/3
+    Type: Active
+    Dmg: 40
+    CC: None
+    Special: Might block the next attack
+-
+    Name: Radiation
+    Element: Light
+    Stamina: 2/3/3
+    Type: Passive
+    Dmg: 0
+    CC: None
+    Special: Heals 20/30/50% of hp
+-
+    Name: Event Horizon
+    Element: Darkness
+    Stamina: 2/3/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: After Event Horizon is casted it will be casted again next turn
+-
+    Name: Epiphora
+    Element: Water
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: Has a 5% chance of increasing init
+-
+    Name: Synthesis
+    Element: Plant
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: Has a 5% chance of healing 5%
+-
+    Name: Glow
+    Element: Fire
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: Has a 5% chance of increasing sp atk
+-
+    Name: Soil Sling
+    Element: Earth
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: Has a 5% chance of increasing sp def
+-
+    Name: Aviate Foil
+    Element: Wind
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 65
+    CC: None
+    Special: Has a 5% chance of increasing atk
+-
+    Name: Kioku
+    Element: Organic
+    Stamina: 1/2/2
+    Type: Active
+    Dmg: 40
+    CC: None
+    Special: 10% / 25 % & 50 % chance to hit twice for 5 %, 10 %, 20 % of dmg
+-
+    Name: Decompression
+    Element: Organic
+    Stamina: 2/2/2
+    Type: Passive
+    Dmg: 0
+    CC: None
+    Special: Increases def by 50 / 70 / 90 for the next turn
+-
+    Name: Swift Strike
+    Element: Organic
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 10
+    CC: None
+    Special: 
+-
+    Name: Insolated Glowing
+    Element: Fire
+    Stamina: 3/3/3
+    Type: Active
+    Dmg: 110
+    CC: None
+    Special: Has a 10 % chance to get 10 % blowback
+-
+    Name: Hydraulic Hit
+    Element: Water
+    Stamina: 3/3/3
+    Type: Active
+    Dmg: 110
+    CC: None
+    Special: Has a 10 % chance to get 10 % blowback
+-
+    Name: R*
+    Element: Plant
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 55
+    CC: None
+    Special: If full cast bonus adds 10 % hp
+-
+    Name: Bloodlust
+    Element: Darkness
+    Stamina: 1/2/3
+    Type: Active
+    Dmg: 80
+    CC: None
+    Special: Has a chance of leeching 3,10,20% dmg
+-
+    Name: Adamantium
+    Element: Light
+    Stamina: 1/2/3
+    Type: Passive
+    Dmg: 0
+    CC: None 
+    Special: Boost HP by 3/5/10 %
