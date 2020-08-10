@@ -24,4 +24,4 @@ helping just hit me up.
 
 **A**: Thats not a question. Also:
 
-![yes](/public/yes.png "Yes")
+![yes](../public/yes.png "Yes")
