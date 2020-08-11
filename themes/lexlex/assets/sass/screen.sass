@@ -9,6 +9,7 @@ $st-patricks-blue: #2f2963ff
 
 $primary: $bittersweet
 $outer-background: $bittersweet
+$white: $floral-white
 $inner-background: $floral-white
 $family-sans-serif: 'Noto Sans', sans-serif
 $family-secondary: 'Noto Sans TC', sans-serif
@@ -22,7 +23,8 @@ $family-secondary: 'Noto Sans TC', sans-serif
 @import "sass/helpers/_all"
 @import "sass/layout/_all"
 
-
+html
+    scroll-behavior: smooth
 body
     background-color: $outer-background
 .content-area
@@ -37,3 +39,7 @@ body
     position: fixed
 .ma
     margin: 0 auto
+
+.navbar-item.is-active
+    font-weight: bold
+

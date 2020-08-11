@@ -1,13 +1,14 @@
 {{ define "main" }}
 <section class="section">
-  <article class="content-area">
     <div class="container">
+      
+      <article class="content-area">
+        <div class="container ma has-text-right">
+          <a href="../" class="button">Take Me Back</a>
+        </div>
       <h1 class="title"> {{ .Title }}</h1>
       {{ .Content }}
+    </article>
     </div>
-  </article>
-  <div class="container ma">
-    <a href="../" class="button">Back</a>
-  </div>
 </section>
 {{ end }}
