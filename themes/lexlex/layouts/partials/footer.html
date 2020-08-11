@@ -1,0 +1,19 @@
+{{ $stickyJs := resources.Get "js/sticky.js" }}
+<script src="{{ $stickyJs.RelPermalink }}"></script>
+
+
+{{ $navbarJs := resources.Get "js/navbar-burger.js" }}
+<script src="{{ $navbarJs.RelPermalink }}"></script>
+
+<script>
+    function ready(fn) {
+        if (document.readyState != 'loading') {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+    ready(() => {
+        sticky('main-nav')
+    });
+</script>

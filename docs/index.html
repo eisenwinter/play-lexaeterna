@@ -41,7 +41,7 @@
 
 
 
-<header class="hero is-primary has-text-centered">
+<header class="hero is-primary has-text-centered" id="top">
   <div class="hero-body">
     <div class="container">
       <h1 class="title is-1">
@@ -54,42 +54,59 @@
   </div>
 </header>
 
+<nav class="navbar" role="navigation" aria-label="main navigation" id="main-nav">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+      data-target="main-navbar-menu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="main-navbar-menu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="#top">
+        Home
+      </a>
+      
+      <a class="navbar-item" href="#sec-basics">
+        Basics
+      </a>
+      
+      <a class="navbar-item" href="#sec-elements">
+        Elements
+      </a>
+      
+      <a class="navbar-item" href="#sec-monsters">
+        Monsters
+      </a>
+      
+      <a class="navbar-item" href="#sec-spells">
+        Spells
+      </a>
+      
+      <a class="navbar-item" href="#sec-more">
+        More
+      </a>
+      
+    </div>
+    <div class="navbar-end">
+
+    </div>
+  </div>
+</nav>
 
 <div class="columns">
-  <div class="column is-1">
-    <article class="panel is-primary fixed">
-      <p class="panel-heading">
-        Lex Æterna
-      </p>
-    <aside class="menu ">
-      <ul class="menu-list">
-        
-        <li><a href="#sec-basics">Basics</a></li>
-      
-        
-        <li><a href="#sec-elements">Elements</a></li>
-      
-        
-        <li><a href="#sec-monsters">Monsters</a></li>
-      
-        
-        <li><a href="#sec-spells">Spells</a></li>
-      
-        
-        <li><a href="#sec-more">More</a></li>
-      
-        
-      
-      </ul>
-    </aside>
-  </article>
-  </div>
   <div class="column">
     
     <section class="section">
       <div class="container">
-        <article
-          id="sec-basics"
+        <article id="sec-basics"
           class="content-area first">
           <h1 class="title">Basics</h1>
           <div class="content"><h2 id="the-game">The Game</h2>
@@ -110,12 +127,11 @@ via the twitch chat. It may be a hommage to a few of our favorite monster battle
 
         </article>
       </div>
-    </section> 
-  
+    </section>
+    
     <section class="section">
       <div class="container">
-        <article
-          id="sec-elements"
+        <article id="sec-elements"
           class="content-area ">
           <h1 class="title">Elements</h1>
           <div class="content"><p>Of corse no great monster brawl is complete without elemental types. Each monster can have one elemental types - and you might have guessed it - elements may be strong or weak against another element.</p>
@@ -439,12 +455,11 @@ but have almost no significat weaknesses overall.</p>
 
         </article>
       </div>
-    </section> 
-  
+    </section>
+    
     <section class="section">
       <div class="container">
-        <article
-          id="sec-monsters"
+        <article id="sec-monsters"
           class="content-area ">
           <h1 class="title">Monsters</h1>
           <div class="content"><p>This monsters are currently avaiable in the game:</p>
@@ -558,12 +573,11 @@ but have almost no significat weaknesses overall.</p>
 
         </article>
       </div>
-    </section> 
-  
+    </section>
+    
     <section class="section">
       <div class="container">
-        <article
-          id="sec-spells"
+        <article id="sec-spells"
           class="content-area ">
           <h1 class="title">Spells</h1>
           <div class="content"><p>Lex Æterna has a <strong>&ldquo;Spell-Slot&rdquo;-System</strong>. This means each monster has 4 slots 
@@ -1295,12 +1309,11 @@ to carry spells which can be choosen. There is no restriction in what spell whic
 
         </article>
       </div>
-    </section> 
-  
+    </section>
+    
     <section class="section">
       <div class="container">
-        <article
-          id="sec-more"
+        <article id="sec-more"
           class="content-area last">
           <h1 class="title">More</h1>
           <div class="content"><p>For further information you check out the <a href="./faq">FAQ</a> or the twitch channel.</p>
@@ -1308,11 +1321,29 @@ to carry spells which can be choosen. There is no restriction in what spell whic
 
         </article>
       </div>
-    </section> 
-  
+    </section>
+    
   </div>
 </div>
 
 
-        </div></body>
+        </div>
+<script src="/play-lexaeterna/js/sticky.js"></script>
+
+
+
+<script src="/play-lexaeterna/js/navbar-burger.js"></script>
+
+<script>
+    function ready(fn) {
+        if (document.readyState != 'loading') {
+            fn();
+        } else {
+            document.addEventListener('DOMContentLoaded', fn);
+        }
+    }
+    ready(() => {
+        sticky('main-nav')
+    });
+</script></body>
 </html>
