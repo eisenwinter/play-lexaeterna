@@ -1,10 +1,15 @@
-<div class="container has-text-centered">
-  <img src="public/elements/{{ .Get "elm" | lower }}.png">
-  <h4 class="title is-2">
-    {{ .Get "elm"  }}
-  </h4>
+<div class="column is-6">
+  <div class="card element--{{.Get "elm" | lower}}">
+    <div class="card-image">
+      <img src="public/elements/{{ .Get "elm" | lower }}.png">
+    </div>
+    <div class="card-content">
+      <h3 class="title is-2">
+        {{ .Get "elm"  }}
+      </h4>
+      <div class="columns">
+        {{ .Inner }}
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="columns columns-max-500-ma">
-  {{ .Inner }}
-</div>  

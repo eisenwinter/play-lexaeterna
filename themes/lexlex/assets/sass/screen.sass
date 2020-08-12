@@ -23,6 +23,8 @@ $family-secondary: 'Noto Sans TC', sans-serif
 @import "sass/helpers/_all"
 @import "sass/layout/_all"
 
+@import "table"
+
 html
     scroll-behavior: smooth
 body
@@ -43,3 +45,55 @@ body
 .navbar-item.is-active
     font-weight: bold
 
+.no-ma
+    margin: 0 !important
+
+$true-blue: rgba(48, 102, 190, 1) //water
+$rich-black-fogra-29: rgba(3, 25, 30, 1) //darkness
+$tart-orange: rgba(242, 87, 87, 1) //fire
+$polished-pine: rgba(112, 162, 136, 1) //plant
+$field-drab: rgba(106, 88, 55, 1) //earth
+$maximum-blue-purple: #afa2ffff //organic
+$glaucous: #7a89c2ff // wind
+$antique-white: #ffeedbff //light
+
+.element--water 
+    background-color: $true-blue
+    color: findColorInvert($true-blue)
+    & h3
+        color: findColorInvert($true-blue)
+.element--darkness
+    background-color: $rich-black-fogra-29
+    color: findColorInvert($rich-black-fogra-29)
+    & h3 
+        color: findColorInvert($rich-black-fogra-29)
+.element--fire
+    background-color: $tart-orange
+    color: findColorInvert($tart-orange)
+    & h3 
+        color: findColorInvert($tart-orange)
+.element--plant
+    background-color: $polished-pine
+    color: findColorInvert($polished-pine)
+    & h3 
+        color: findColorInvert($polished-pine)
+.element--earth
+    background-color: $field-drab
+    color: findColorInvert($field-drab)
+    & h3 
+        color: findColorInvert($field-drab)
+.element--organic
+    background-color: $maximum-blue-purple
+    color: findColorInvert($maximum-blue-purple)
+    & h3 
+        color: findColorInvert($maximum-blue-purple)
+.element--wind
+    background-color: $glaucous
+    color: findColorInvert($glaucous)
+    & h3 
+        color: findColorInvert($glaucous)
+.element--light
+    background-color: $antique-white
+    color: findColorInvert($antique-white)
+    & h3 
+        color: findColorInvert($antique-white)

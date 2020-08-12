@@ -7,7 +7,7 @@ scroll_indicator: true
 
 Of corse no great monster brawl is complete without elemental types. Each monster can have one elemental types - and you might have guessed it - elements may be strong or weak against another element.
 
-
+{{<columns>}}
 {{<element elm="Light">}}
 {{%column%}}
 Lights weaknesses are:
@@ -119,7 +119,7 @@ but have almost no significat weaknesses overall.
 {{%/column%}}
 {{</element>}}
 
-
+{{</columns>}}
 
 #### Overview
 

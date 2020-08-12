@@ -1,14 +1,22 @@
-{{ range $.Site.Data.game.monsters.starters }}
-    <article class="media">
-        <figure class="media-left image is-32x32">
-            <img src="public/elements/{{.Element | lower}}.png">
+<div class="columns is-multiline">
+  {{ range $.Site.Data.game.monsters.starters }}
+  <div class="column is-3">
+    <div class="card element--{{.Element | lower}}">
+      <div class="card-image">
+        <figure class="no-ma  image is-fullwidth">
+          <img src="public/elements/{{.Element | lower}}.png">
         </figure>
-        <div class="media-content">
-          <div class="content">
-            <h3>{{ .Name }}</h3>
-            <small> {{ .Element}}</small>
+      </div>
+      <div class="card-content">
+        <article class="media">
+          <div class="media-content">
+              <h3>{{ .Name }}</h3>
+              <small> {{ .Element}}</small>
           </div>
-         
-        </div>
-      </article>
-{{ end }}
+        </article>
+      </div>
+
+    </div>
+  </div>
+  {{ end }}
+</div>
