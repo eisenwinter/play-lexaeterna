@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $headless := .Site.GetPage "/homepage" }}
+{{ $headless := .Site.GetPage "/section" }}
 {{ $sections := $headless.Resources.ByType "page" }}
 
 <nav class="navbar" role="navigation" aria-label="main navigation" id="main-nav">
@@ -26,7 +26,7 @@
     </div>
     <div class="navbar-end">
       {{ range where .Site.Pages ".Params.in_menu" "eq" true   }}
-      <a class="navbar-item" href="{{.Permalink}}">
+      <a class="navbar-item" href="{{ .Permalink }}">
         {{.Title}}
       </a>
    

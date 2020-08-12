@@ -1,7 +1,8 @@
 ---
 title: '{{ replace .Name "-" " " | title }}'
 weight: 5
-in_menu: true
+scroll_indicator: true
 ---
 
-Content
+
+This is a new section on your front page

@@ -1,9 +1,6 @@
-{{ $stickyJs := resources.Get "js/sticky.js" }}
-<script src="{{ $stickyJs.RelPermalink }}"></script>
+{{ $js := resources.Get "js/menu.js" }}
+<script src="{{ $js.RelPermalink }}"></script>
 
-
-{{ $navbarJs := resources.Get "js/navbar-burger.js" }}
-<script src="{{ $navbarJs.RelPermalink }}"></script>
 
 <script>
     function ready(fn) {
@@ -13,8 +10,5 @@
             document.addEventListener('DOMContentLoaded', fn);
         }
     }
-    ready(() => {
-        sticky('main-nav')
-        highlight()
-    });
+    ready(go([ sticky, highlight, burgerMenu ]))
 </script>
