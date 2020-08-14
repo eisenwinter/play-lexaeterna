@@ -2,7 +2,7 @@
 <html><meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<title>Faq</title>
+<title>FAQ</title>
 
 <link rel="shortcut icon" href="https://eisenwinter.github.io/play-lexaeterna/images/favicon.png" type="image/png"/>
 
@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="https://eisenwinter.github.io/play-lexaeterna/sass/screen.css">
 
 
-<meta property="og:title" content="Faq" />
+<meta property="og:title" content="FAQ" />
 <meta property="og:description" content="F: Why?
 A: Quaratine was long in 2020. Also why not.
 F: The game looks &hellip; bad, why?
@@ -37,7 +37,7 @@ A: Thats not a question. Also:" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://eisenwinter.github.io/play-lexaeterna/images/cover-image.jpg"/>
 
-<meta name="twitter:title" content="Faq"/>
+<meta name="twitter:title" content="FAQ"/>
 <meta name="twitter:description" content="F: Why?
 A: Quaratine was long in 2020. Also why not.
 F: The game looks &hellip; bad, why?
@@ -45,7 +45,7 @@ A: I am a software developer who has never done any game development before, the
 F: This game sucks.
 A: Thats not a question. Also:"/>
 
-<meta itemprop="name" content="Faq">
+<meta itemprop="name" content="FAQ">
 <meta itemprop="description" content="F: Why?
 A: Quaratine was long in 2020. Also why not.
 F: The game looks &hellip; bad, why?
@@ -61,12 +61,29 @@ A: Thats not a question. Also:">
 
 <meta itemprop="keywords" content="" />
 
-<body><div id="content">
+<body>
+<header class="hero is-primary has-text-centered" id="top">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-1">
+          Lex Æterna
+        </h1>
+        <h2 class="subtitle">
+          The eternal battle
+        </h2>
+      </div>
+    </div>
+  </header>
+  <div id="content">
 <section class="section">
-  <article class="content-area">
-  <div class="container">
-    <h1 class="title"> Faq</h1>
-    <p><strong>F</strong>: Why?</p>
+    <div class="container">
+      
+      <article class="content-area">
+        <div class="container ma has-text-right">
+          <a href="../" class="button">Take Me Back</a>
+        </div>
+      <h1 class="title"> FAQ</h1>
+      <p><strong>F</strong>: Why?</p>
 <p><strong>A</strong>: Quaratine was long in 2020. Also why not.</p>
 <p><strong>F:</strong> The game looks &hellip; bad, why?</p>
 <p><strong>A</strong>: I am a software developer who has never done any game development before,
@@ -76,16 +93,13 @@ helping just hit me up.</p>
 <p><strong>A</strong>: Thats not a question. Also:</p>
 <p><img src="../public/yes.png" alt="yes" title="Yes"></p>
 
-  </div>
-  </article>
+    </article>
+    </div>
 </section>
 
         </div>
-<script src="/play-lexaeterna/js/sticky.js"></script>
+<script src="/play-lexaeterna/js/menu.js"></script>
 
-
-
-<script src="/play-lexaeterna/js/navbar-burger.js"></script>
 
 <script>
     function ready(fn) {
@@ -95,8 +109,6 @@ helping just hit me up.</p>
             document.addEventListener('DOMContentLoaded', fn);
         }
     }
-    ready(() => {
-        sticky('main-nav')
-    });
+    ready(go([ sticky, highlight, burgerMenu ]))
 </script></body>
 </html>

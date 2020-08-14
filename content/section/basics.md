@@ -26,4 +26,6 @@ wip - join twitch, mash buttons
 
 https://www.twitch.tv/play_lexaeterna
 
+{{<twitch>}}
+
 > NOTE: Currently I am setting stuff up - no way to play for now sry.

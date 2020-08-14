@@ -1,9 +1,10 @@
 {{ range $.Site.Data.game.spells.spells }}
+<div class="card element--{{.Element | lower}}">
+<div class="card-content">
 <article class="media">
-    <figure class="media-left image is-64x64">
+    <div class="media-left image is-64x64 ">
         <img src="public/elements/{{.Element | lower}}.png">
-        <small>     {{.Element}}</small>
-    </figure>
+    </div>
     <div class="media-content">
         <div class="content">
             <h3> {{ .Name }}            </h3>
@@ -16,10 +17,12 @@
         </div>
 
     </div>
-    <div class="media-right">
+    <div class="media-right has-text-right">
         {{.Stamina}}
         <br>
         {{.Type}}
     </div>
 </article>
+</div>
+</div>
 {{ end }}

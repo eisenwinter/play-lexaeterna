@@ -14,7 +14,7 @@ spells:
     Type: Active
     Dmg: 0
     CC: None
-    Special: 5/25/50 % chance to deflect 5/25/50 % dmg
+    Special: 5/25/50 % chance to deflect 5/25/50 % damage
 -
     Name: Vulcan
     Element: Fire
@@ -142,7 +142,7 @@ spells:
     Type: Active
     Dmg: 65
     CC: None
-    Special: Has a 5% chance of increasing init
+    Special: Has a 5% chance of increasing initative
 -
     Name: Synthesis
     Element: Plant
@@ -158,7 +158,7 @@ spells:
     Type: Active
     Dmg: 65
     CC: None
-    Special: Has a 5% chance of increasing sp atk
+    Special: Has a 5% chance of increasing elemental attack
 -
     Name: Soil Sling
     Element: Earth
@@ -166,7 +166,7 @@ spells:
     Type: Active
     Dmg: 65
     CC: None
-    Special: Has a 5% chance of increasing sp def
+    Special: Has a 5% chance of increasing elemental defense
 -
     Name: Aviate Foil
     Element: Wind
@@ -174,7 +174,7 @@ spells:
     Type: Active
     Dmg: 65
     CC: None
-    Special: Has a 5% chance of increasing atk
+    Special: Has a 5% chance of increasing attack
 -
     Name: Kioku
     Element: Organic
@@ -182,7 +182,7 @@ spells:
     Type: Active
     Dmg: 40
     CC: None
-    Special: 10% / 25 % & 50 % chance to hit twice for 5 %, 10 %, 20 % of dmg
+    Special: 10/25/50 % chance to hit twice for 5/10/20 % of dmg
 -
     Name: Decompression
     Element: Organic
@@ -190,7 +190,7 @@ spells:
     Type: Passive
     Dmg: 0
     CC: None
-    Special: Increases def by 50 / 70 / 90 for the next turn
+    Special: Increases defense by 50 / 70 / 90 for the next turn
 -
     Name: Swift Strike
     Element: Organic
@@ -222,7 +222,7 @@ spells:
     Type: Active
     Dmg: 55
     CC: None
-    Special: If full cast bonus adds 10 % hp
+    Special: If full trinity cast bonus is reached adds 10 % hp
 -
     Name: Bloodlust
     Element: Darkness
@@ -230,7 +230,7 @@ spells:
     Type: Active
     Dmg: 80
     CC: None
-    Special: Has a chance of leeching 3,10,20% dmg
+    Special: Has a chance of leeching 3/10/20% dmg
 -
     Name: Adamantium
     Element: Light
