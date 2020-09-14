@@ -1,11 +1,21 @@
+<hr />
 <div class="reslotter">
-    <div id="spells--slotter">
-        {{ range $.Site.Data.game.spells.spells }}
-        <input type="checkbox" id="{{ .Name  | urlize }}" value="{{ .Name }}">
-        <label class="element--{{.Element | lower}}" data-tooltip="{{.Special}} -     {{.Stamina}}" for="{{ .Name  | urlize }}"> {{ .Name }} ( {{.Type}})</label>
-        {{ end }}
-    </div>
-    <code id="reslot-output"></code>
+        <div id="spells--slotter" class="columns is-multiline">
+            {{ range $.Site.Data.game.spells.spells }}
+            <div class="column is-3 element--{{.Element | lower}}">
+                <input type="checkbox" id="{{ .Name  | urlize }}" value="{{ .Name }}">
+                <label data-tooltip="{{.Special}} -     {{.Stamina}}" for="{{ .Name  | urlize }}"> {{ .Name }}
+                    ({{.Type}})</label>
+            </div>
+            {{ end }}
+        </div>
+ <hr>
+    <h4 class="is-size-4">Your code to reslot your spells:</h1>
+        <br />
+        <div class="box">
+            <code id="reslot-output">Nothing selected yet.</code>
+            
+        </div>
 </div>
 
 
@@ -62,7 +72,7 @@
                     }
                 }
                 if (elm) {
-                    elm.innerHTML = checkboxesChecked.map(f => f.value);
+                    elm.innerHTML = '!slot ' + checkboxesChecked.map(f => f.value).join(";");
                 }
                 // Define unchecked checkboxes for comparisons
                 checkboxesUnchecked = checkboxes.filter(function (val) {
@@ -71,6 +81,8 @@
             });
         }
     }
+
+   
 
     limitCheckboxes({
         elements: document.getElementById('spells--slotter').querySelectorAll('input[type="checkbox"]'),
