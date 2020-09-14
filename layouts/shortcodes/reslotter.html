@@ -1,0 +1,80 @@
+<div class="reslotter">
+    <div id="spells--slotter">
+        {{ range $.Site.Data.game.spells.spells }}
+        <input type="checkbox" id="{{ .Name  | urlize }}" value="{{ .Name }}">
+        <label class="element--{{.Element | lower}}" data-tooltip="{{.Special}} -     {{.Stamina}}" for="{{ .Name  | urlize }}"> {{ .Name }} ( {{.Type}})</label>
+        {{ end }}
+    </div>
+    <code id="reslot-output"></code>
+</div>
+
+
+<script>
+    function limitCheckboxes(settings) {
+        if (settings.elements === undefined) { return; }
+        if (settings.maxCount === undefined) { settings.maxCount = false; return; }
+        let elm = null;
+        if (settings.writeTo) {
+            elm = document.getElementById(settings.writeTo)
+        }
+        // Configure list of initial checkboxes that are checked from load
+        var checkboxes = Array.from(settings.elements),
+            checkboxesChecked = [],
+            checkboxesUnchecked = [];
+
+        for (var i = 0; checkboxesChecked < 2 && i < checkboxes.length; i++) {
+            if (checkboxes[i].checked == true) {
+                checkboxesChecked.push(checkboxes[i]);
+            }
+        }
+
+        for (var i = 0; i < settings.elements.length; i++) {
+            settings.elements[i].addEventListener('change', function () {
+                if (this.checked == true) {
+                    // Add this new checked checkbox to the array
+                    checkboxesChecked.push(this);
+
+                    // if the checkboxesChecked reaches maxCount (or if for some reason it's above it)...
+                    if (checkboxesChecked.length >= settings.maxCount) {
+                        // Define unchecked checkboxes for comparisons
+                        checkboxesUnchecked = checkboxes.filter(function (val) {
+                            return checkboxesChecked.indexOf(val) == -1;
+                        });
+
+                        // Disable all unchecked checkboxes
+                        for (var i = 0; i < checkboxesUnchecked.length; i++) {
+                            checkboxesUnchecked[i].disabled = true;
+                        }
+                    }
+                } else {
+                    // loop through checkboxesChecked list
+                    for (var i = 0; i < checkboxesChecked.length; i++) {
+                        // if THIS element id matches LOOP element id, remove it from the array
+                        if (this.id === checkboxesChecked[i].id) {
+                            checkboxesChecked.splice(i, 1);
+                            break;
+                        }
+                    }
+
+                    // Disable all unchecked checkboxes
+                    for (var i = 0; i < checkboxesUnchecked.length; i++) {
+                        checkboxesUnchecked[i].disabled = false;
+                    }
+                }
+                if (elm) {
+                    elm.innerHTML = checkboxesChecked.map(f => f.value);
+                }
+                // Define unchecked checkboxes for comparisons
+                checkboxesUnchecked = checkboxes.filter(function (val) {
+                    return checkboxesChecked.indexOf(val) == -1;
+                });
+            });
+        }
+    }
+
+    limitCheckboxes({
+        elements: document.getElementById('spells--slotter').querySelectorAll('input[type="checkbox"]'),
+        maxCount: "4",
+        writeTo: "reslot-output"
+    });
+</script>
