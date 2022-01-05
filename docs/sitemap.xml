@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://www.lexaeterna.online/faq/</loc>
     <lastmod>2020-08-07T21:38:34+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lexaeterna.online/reslot/</loc>
     <lastmod>2020-08-07T21:38:34+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://www.lexaeterna.online/</loc>
     <priority>0</priority>
   </url>
-  
 </urlset>
